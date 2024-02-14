@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Nav Bar */
+.nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  max-height: 5%;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.logo {
+  float: left;
+  padding: 2px 15px;
+}
+ul {
+  flex-direction: row;
+  padding-right: 15px;
+}
+li {
+  padding: 5px 10px;
+  list-style: none;
+  display: inline-block;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+button {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .lobtn {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .logo {
+    float: left;
+    padding: 2px 15px;
+  }
+  ul {
+    padding-bottom: 1px;
+    display: none;
+  }
+  .h {
+    flex-direction: column;
+    display: flex;
+  }
+
+  li {
+    display: flex;
+    padding: 5px 10px;
+    list-style: none;
+    justify-content: center;
+    background-color: #191919;
+  }
+  button {
+    display: flex;
+    border: none;
+    background-color: white;
+  }
+}
+/* Footer */
+.containe {
+  max-width: 100%;
+  background-color: #191919;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #191919;
+  flex-wrap: wrap;
+  align-content: start;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  text-align: left;
+  display: block;
+  padding-top: 10px;
+}
+.aside {
+  display: flex;
+
+  display: block;
+  align-items: flex-start;
+  padding: 20px 10px;
+  position: relative;
+}
+.aside-b {
+  align-items: center;
+
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+}
+.base {
+  display: flex;
+  border-top: 2px solid blueviolet;
+  margin: 10px 20px;
+  color: gray;
+}
+@media screen and (max-width: 880px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.r {
+  flex: 1; /* Make it take up 50% of the container width */
+  padding: 20px;
+  display: inline;
+  text-align: right;
+}
+.l {
+  flex: 1; /* Make it take up 50% of the container width */
+  padding: 20px;
+}
+@media screen and (max-width: 1076px) {
+  #third {
+    display: block;
+  }
+  footer {
+    display: block;
+    flex-direction: column;
+  }
+}
+
+/* Style for the footer */
+
+/* Body */
+/* Body */
